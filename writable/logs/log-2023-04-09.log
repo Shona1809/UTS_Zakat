@@ -1,0 +1,106 @@
+CRITICAL - 2023-04-09 00:32:18 --> Undefined variable $user_name
+in APPPATH\Views\layout\v_nav.php on line 12.
+ 1 APPPATH\Views\layout\v_nav.php(12): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $user_name', 'APPPATH\\Views\\layout\\v_nav.php', 12)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_nav.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('layout/v_nav', [], true)
+ 5 APPPATH\Views\layout\v_wrapper.php(4): view('layout/v_nav')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_wrapper.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+ 9 APPPATH\Controllers\Home.php(10): view('layout/v_wrapper')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+CRITICAL - 2023-04-09 00:33:10 --> Undefined variable $tittle
+in APPPATH\Views\layout\v_nav.php on line 75.
+ 1 APPPATH\Views\layout\v_nav.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $tittle', 'APPPATH\\Views\\layout\\v_nav.php', 75)
+ 2 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_nav.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('layout/v_nav', [], true)
+ 5 APPPATH\Views\layout\v_wrapper.php(4): view('layout/v_nav')
+ 6 SYSTEMPATH\View\View.php(213): include('APPPATH\\Views\\layout\\v_wrapper.php')
+ 7 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1134): CodeIgniter\View\View->render('layout/v_wrapper', [], true)
+ 9 APPPATH\Controllers\Home.php(10): view('layout/v_wrapper')
+10 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-09 00:34:56 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pertemuan1', 3306, '', 0)
+#1 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Desktop\UTS_Zakat\app\Models\MData.php(11): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#4 C:\Users\ASUS\Desktop\UTS_Zakat\app\Controllers\Data.php(23): App\Models\MData->getData()
+#5 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(927): App\Controllers\Data->index()
+#6 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ASUS\Desktop\UTS_Zakat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ASUS\Desktop\UTS_Zakat\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\ASUS\\D...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Desktop\UTS_Zakat\app\Models\MData.php(11): CodeIgniter\Database\BaseConnection->query('select * from t...')
+#3 C:\Users\ASUS\Desktop\UTS_Zakat\app\Controllers\Data.php(23): App\Models\MData->getData()
+#4 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(927): App\Controllers\Data->index()
+#5 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#6 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ASUS\Desktop\UTS_Zakat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ASUS\Desktop\UTS_Zakat\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\ASUS\\D...')
+#9 {main}
+CRITICAL - 2023-04-09 00:34:56 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\MData.php(11): CodeIgniter\Database\BaseConnection->query('select * from tbl_fitrah')
+ 3 APPPATH\Controllers\Data.php(23): App\Models\MData->getData()
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Data->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
+ERROR - 2023-04-09 00:36:23 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\MySQLi\Connection.php:171
+Stack trace:
+#0 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\MySQLi\Connection.php(171): mysqli->real_connect('localhost', 'root', '', 'pertemuan1', 3306, '', 0)
+#1 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\ASUS\Desktop\UTS_Zakat\app\Models\MData.php(11): CodeIgniter\Database\BaseConnection->query('select * from z...')
+#4 C:\Users\ASUS\Desktop\UTS_Zakat\app\Controllers\Data.php(23): App\Models\MData->getData()
+#5 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(927): App\Controllers\Data->index()
+#6 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#7 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\ASUS\Desktop\UTS_Zakat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 C:\Users\ASUS\Desktop\UTS_Zakat\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\ASUS\\D...')
+#10 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\MySQLi\Connection.php:215
+Stack trace:
+#0 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\ASUS\Desktop\UTS_Zakat\system\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\ASUS\Desktop\UTS_Zakat\app\Models\MData.php(11): CodeIgniter\Database\BaseConnection->query('select * from z...')
+#3 C:\Users\ASUS\Desktop\UTS_Zakat\app\Controllers\Data.php(23): App\Models\MData->getData()
+#4 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(927): App\Controllers\Data->index()
+#5 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+#6 C:\Users\ASUS\Desktop\UTS_Zakat\system\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\Users\ASUS\Desktop\UTS_Zakat\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#8 C:\Users\ASUS\Desktop\UTS_Zakat\system\Commands\Server\rewrite.php(46): require_once('C:\\Users\\ASUS\\D...')
+#9 {main}
+CRITICAL - 2023-04-09 00:36:23 --> Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+in SYSTEMPATH\Database\BaseConnection.php on line 418.
+ 1 SYSTEMPATH\Database\BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\MData.php(11): CodeIgniter\Database\BaseConnection->query('select * from zakat')
+ 3 APPPATH\Controllers\Data.php(23): App\Models\MData->getData()
+ 4 SYSTEMPATH\CodeIgniter.php(927): App\Controllers\Data->index()
+ 5 SYSTEMPATH\CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Data))
+ 6 SYSTEMPATH\CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(46): require_once('FCPATH\\index.php')
